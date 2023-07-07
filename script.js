@@ -36,17 +36,27 @@ $(".btn").click(function(){
     var s = $('#inp-sec').val();
     var t = $('#inp-time').val()
     
-    if((h<0 || h>12) || (m < 0 || m >60) || (s < 0 || s >60)){
-    alert("Enter Correct Time !")
-    
-    }else{
-        $('#h').text(h);
+    if(t == 'AM'){
+        if(Number.parseInt(h)<0 || Number.parseInt(h)>=12){
+            alert("Enter correct Time !");
+        }else{
+        $('#h').text(h)
         $('#m').text(m)
         $('#s').text(s)
-        $('#t').text(t);
-
+        $('#t').text(t)
+        }
+    }else{
+        if(Number.parseInt(h) == 0){
+            alert("Enter correct Time !");
+        }else{
+        $('#h').text(h)
+        $('#m').text(m)
+        $('#s').text(s)
+        $('#t').text(t)
+        }
     }
-})
+}
+)
 
 $('#del-btn').click(function(){
 
