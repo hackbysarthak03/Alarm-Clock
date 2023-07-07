@@ -8,6 +8,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="alarm-img">
+        <img src="Assets/alarm-clock.png" height="140px" width="140px">
+        </div>
         <section class="current-time">
             <div class="time-box" id="hour">
 
@@ -24,38 +27,34 @@
         </section>
 
         <section class="set-alarm">
-            <select name="language" id="get-hour" >
-                <option value="javascript" disabled selected>Hours</option>
-                <option value="python">Python</option>
-                <option value="c++">C++</option>
-                <option value="java">Java</option>
-              </select>
-              <select name="language" id="language">
-                <option value="javascript" disabled selected>Minutes</option>
-                <option value="python">Python</option>
-                <option value="c++">C++</option>
-                <option value="java">Java</option>
-              </select>
-              <select name="language" id="language">
-                <option value="javascript" disabled selected>Seconds</option>
-                <option value="python">Python</option>
-                <option value="c++">C++</option>
-                <option value="java">Java</option>
-              </select>
-              <select name="language" id="language">
-                <option value="javascript" disabled selected>AM/PM</option>
-                <option value="python">Python</option>
-                <option value="c++">C++</option>
-                <option value="java">Java</option>
-              </select>
+            <input type="number" id="inp-hour" class="inp" placeholder="00">
+            <input type="number" id="inp-min" class="inp" placeholder="00">
+            <input type="number" id="inp-sec" class="inp" placeholder="00">
+            <select id="inp-time" style="padding:0px; font-size: 15px;">
+              <option value="" selected disabled>AM/PM</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
         </section>
 
         <section class="btn">
             <button class="set-alarm-btn">
                 Set Alarm
             </button>
+           
         </section>
+       <div class="show">
+            <div id="h" class="b"></div>
+            <div id="m" class="b"></div>
+            <div id="s" class="b"></div>
+            <div id="t" class="b"></div>
+            <button id="del-btn">DEL</button>
+        </div>
     </div>
+    <!-- <section class="warn">
+        Warning : Enter Correct Value !
+    </section> -->
 </body>
+<script src="jquery.js"></script>
 <script src="script.js"></script>
 </html>

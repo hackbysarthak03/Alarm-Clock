@@ -10,12 +10,21 @@ font-family: 'Yatra One', cursive;
 font-family: 'Ysabeau Office', sans-serif;
 }
 
+.alarm-img{
+    justify-content: center;
+    display: flex;
+}
+
+img{
+    margin-top: 5%;
+}
+
 .container{
     width: 90%;
     max-width: 400px;
-    height: 50vh;
+    height: 70vh;
     background-color: rgb(191, 189, 189);
-    margin:10% auto;
+    margin:5% auto;
     border-radius: 15px;
 }
 
@@ -32,7 +41,7 @@ font-family: 'Ysabeau Office', sans-serif;
     justify-content: center;
     align-items:center;
     font-size: 45px;
-    margin-top: 10%;
+    margin-top: 5%;
     height: 80px;
     width: 80px;
     border-radius: 10px;
@@ -61,6 +70,20 @@ font-family: 'Ysabeau Office', sans-serif;
     align-items: center;
 }
 
+.set-alarm{
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.inp{
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+}
+
 .set-alarm-btn{
     margin: auto;
     font-size: 25px;
@@ -80,3 +103,57 @@ font-family: 'Ysabeau Office', sans-serif;
     color: black;
 }
 
+.warn{
+    margin-top: 5px;
+    width: 92%;
+    height: 30px;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.show{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.b{
+    margin-top: 10px;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+#del-btn{
+    height: 35px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: rgb(193, 6, 6);
+    color:white;
+    font-weight: 600;
+    font-size:16px;
+    border: none;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+#del-btn:hover{
+    background-color: red;
+}
